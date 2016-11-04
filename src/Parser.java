@@ -47,14 +47,14 @@ public class Parser {
      */
 
     private void initializeVariables(ArrayList<String> parsedText) {
-        int nbrColums = Integer.parseInt(parsedText.get(0));
+        int nbrColumns = Integer.parseInt(parsedText.get(0));
         int nbrRows = Integer.parseInt(parsedText.get(1));
         int nbrOfObstacles = Integer.parseInt(parsedText.get(2));
         int obstacle_X;
         int obstacle_Y;
 
         // Array med storleken enligt rader & kolumner.
-        brickArray = new Brick[nbrColums][nbrRows];
+        brickArray = new Brick[nbrColumns][nbrRows];
 
         // Initierar brickorna och hindren i spelet.
         initializeBricks();
